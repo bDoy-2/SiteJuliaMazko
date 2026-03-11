@@ -7,6 +7,7 @@ import runableWebsiteRuntime from "runable-website-runtime"
 import runableAnalyticsPlugin from "./vite/plugins/runable-analytics-plugin";
 
 export default defineConfig({
+	root: 'src/web',
 	base: '/SiteJuliaMazko/',
 	plugins: [react(), runableAnalyticsPlugin(), runableWebsiteRuntime(), cloudflare(), tailwind()],
 	resolve: {
